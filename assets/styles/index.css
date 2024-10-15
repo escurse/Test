@@ -9,6 +9,7 @@ body {
     color: #212121;
     font-size: 0.9rem;
     font-weight: 300;
+    overflow: hidden;
 }
 
 #form{
@@ -53,10 +54,15 @@ body {
     font-family: inherit;
     font-size: 1rem;
     border: 0.1rem solid #cfcfcf;
+    outline: none;
 }
 
-#form > .span-container > .op > .opt {
+#form > .span-container > .op:hover {
+    border: 0.1rem solid #b3b2b2;
+}
 
+#form > .span-container > .op:focus {
+    border: 0.1rem solid #939292;
 }
 
 #form > .span-container > .title {
@@ -64,13 +70,31 @@ body {
     border-radius: 0.25rem;
     font-family: inherit;
     border: 0.1rem solid #cfcfcf;
+    outline: none;
+}
+
+#form > .span-container > .title:hover {
+    border: 0.1rem solid #b3b2b2;
+}
+
+#form > .span-container > .title:focus {
+    border: 0.1rem solid #939292;
 }
 
 #form > .span-container > .content {
-    height: 8rem;
+    height: 7rem;
     border-radius: 0.25rem;
     font-family: inherit;
     border: 0.1rem solid #cfcfcf;
+    outline: none;
+}
+
+#form > .span-container > .content:hover {
+    border: 0.1rem solid #b3b2b2;
+}
+
+#form > .span-container > .content:focus {
+    border: 0.1rem solid #939292;
 }
 
 #form > .button > .input {

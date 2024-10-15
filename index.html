@@ -15,19 +15,19 @@
     <label class="span-container">
         <span class="text">게시판</span>
         <select name="op" class="op">
-            <option hidden class="opt">게시판을 선택해 주세요.</option>
-            <option value="free" class="opt">자유게시판</option>
-            <option value="qna" class="opt">Q&A게시판</option>
-            <option value="review" class="opt">후기게시판</option>
+            <option hidden>&nbsp;게시판을 선택해 주세요.</option>
+            <option value="free">&nbsp;자유게시판</option>
+            <option value="qna">&nbsp;Q&A게시판</option>
+            <option value="review">&nbsp;후기게시판</option>
         </select>
     </label>
     <label class="span-container">
         <span class="text">제목</span>
-        <input name="title" placeholder=" 제목을 입력해 주세요" class="title">
+        <input required name="title" placeholder="  제목을 입력해 주세요" class="title">
     </label>
     <label class="span-container">
         <span class="text">내용</span>
-        <textarea name="content" class="content" placeholder=" 내용을 입력해 주세요"></textarea>
+        <textarea name="content" class="content" placeholder="  내용을 입력해 주세요"></textarea>
     </label>
     <span class="result"></span>
     <button class="submit button" type="submit">
