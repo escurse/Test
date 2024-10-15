@@ -33,5 +33,3 @@ $form.onsubmit = (e) => {
     xhr.open('GET', url.toString());
     xhr.send();
 }
-
-
