@@ -10,6 +10,26 @@
     <script defer src="./assets/scripts/index.js" type="text/javascript"></script>
 </head>
 <body>
-
+<form id="form">
+    <h1 class="head-title">글 쓰기</h1>
+    <label class="span-container">
+        <span class="text">게시판</span>
+        <select name="op">
+            <option value="free">자유게시판</option>
+            <option value="qna">Q&A게시판</option>
+            <option value="review">후기게시판</option>
+        </select>
+    </label>
+    <label class="span-container">
+        <span class="text">제목</span>
+        <input name="title" placeholder="제목을 입력해 주세요">
+    </label>
+    <label class="span-container">
+        <span class="text">내용</span>
+        <textarea name="" id="" class="content"></textarea>
+    </label>
+    <input type="submit" placeholder="">
+    <input type="reset">
+</form>
 </body>
 </html>
