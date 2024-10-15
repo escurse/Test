@@ -43,11 +43,42 @@ body {
     color: #757575;
 }
 
+#form > .span-container:focus-within > .text {
+    color: #2196f3;
+}
+
+#form > .span-container > .op {
+    height: 2rem;
+    border-radius: 0.25rem;
+    font-family: inherit;
+    font-size: 1rem;
+    border: 0.1rem solid #cfcfcf;
+}
+
+#form > .span-container > .op > .opt {
+
+}
+
+#form > .span-container > .title {
+    height: 2rem;
+    border-radius: 0.25rem;
+    font-family: inherit;
+    border: 0.1rem solid #cfcfcf;
+}
+
+#form > .span-container > .content {
+    height: 8rem;
+    border-radius: 0.25rem;
+    font-family: inherit;
+    border: 0.1rem solid #cfcfcf;
+}
+
 #form > .button > .input {
     display: none;
 }
 
 #form > .submit {
+    height: 2rem;
     background-color: #2196faa0;
     border-radius: 0.25rem;
     border: none;
@@ -55,19 +86,41 @@ body {
 }
 
 #form > .submit:hover {
-    background-color: #1f83d6a0;
+    background-color: #1d83dca0;
 }
 
 #form > .submit:active {
-    background-color: #2473baa0;
+    background-color: #176fbca0;
 }
 
-#form > .success-text {
-    color: green;
+#form > .reset {
+    height: 2rem;
+    background-color: #a0a0a0a0;
+    border-radius: 0.25rem;
+    border: none;
+    color: #ffffff;
 }
 
-#form > .failure-text {
-    color: red;
+#form > .reset:hover {
+    background-color: #818080a0;
+}
+
+#form > .reset:active {
+    background-color: #575656a0;
+}
+
+#form > .result {
+    display: none;
+}
+
+#form > .result.--success {
+    color: #06c603;
+    display: block;
+}
+
+#form > .result.--failure {
+    color: #da1515;
+    display: block;
 }
 
 
