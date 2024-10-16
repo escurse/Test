@@ -1,4 +1,114 @@
 @charset "UTF-8";
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css");
 
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+    background-color: #eeeeee;
+    color: #212121;
+    font-size: 0.9rem;
+    font-weight: 300;
+    overflow: hidden;
+}
+
+#form{
+    top: 50%;
+    left: 50%;
+    width: 27.5rem;
+    transform: translate(-50%, -50%);
+    background-color: transparent;
+    position: absolute;
+
+    align-items: flex-start;
+    display: flex;
+    gap: 0.5rem;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#form > .head-title {
+    font-size: 1.5rem;
+    font-weight: 300;
+}
+
+#form > .container {
+    align-items: stretch;
+    display: flex;
+    flex-direction: row;
+    gap: 0.5rem;
+    justify-content: center;
+}
+
+#form > .container > .span-container {
+    align-items: flex-start;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#form > .container > .span-container > .text {
+    color: #757575;
+}
+
+#form > .container > .span-container:focus-within > .text {
+    color: #2196f3;
+}
+
+#form > .container > .span-container > .writer {
+    border: 0.15rem solid #cfcfcf;
+    outline: none;
+}
+
+#form > .container > .span-container > .writer:hover {
+    border: 0.15rem solid #b3b2b2;
+}
+
+#form > .container > .span-container > .writer:focus {
+    border: 0.15rem solid #2196f3;
+}
+
+#form > .container > .span-container > .content {
+    border: 0.15rem solid #cfcfcf;
+    outline: none;
+}
+
+#form > .container > .span-container > .content:hover {
+    border: 0.15rem solid #b3b2b2;
+}
+
+#form > .container > .span-container > .content:focus {
+    border: 0.15rem solid #2196f3;
+}
+
+#form > .container > .submit {
+    background-color: #2196faa0;
+    width: 5rem;
+    border: none;
+    border-radius: 0.25rem;
+    color: #ffffff;
+}
+
+#form > .container > .submit:hover {
+    background-color: #1d83dca0;
+}
+
+#form > .container > .submit:active {
+    background-color: #176fbca0;
+}
+
+#form > .result.--success {
+    color: green;
+}
+
+#form > .result.--failure {
+    color: red;
+}
 
 
